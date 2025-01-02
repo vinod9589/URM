@@ -3,7 +3,6 @@ import { Grid, Paper, TextField, Box } from "@mui/material";
 import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import SettingsRoundedIcon from "@mui/icons-material/SettingsRounded";
 import NotificationsRoundedIcon from "@mui/icons-material/NotificationsRounded";
-import img from "../../../public/urmimg.png"
 
 function BasicGrid() {
   return (
@@ -15,7 +14,7 @@ function BasicGrid() {
          
           height={"50px"}
             
-            src={img}
+            src="./urmimg.png"
             alt="Logo"
           />
         </Paper>
