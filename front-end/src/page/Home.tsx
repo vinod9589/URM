@@ -86,7 +86,7 @@ function Home() {
           </Grid>
           <Grid
             sx={{
-              border: "1px solid black",
+            
             }}
             item
             xs={12}

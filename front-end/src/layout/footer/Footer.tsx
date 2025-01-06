@@ -6,7 +6,7 @@ import { Typography } from "@mui/material";
 
 export default function BasicGrid() {
   return (
-    <Box sx={{ flexGrow: 1, padding: 3 }}>
+    <Box sx={{ flexGrow: 1, padding: 3}}>
       <Grid container>
         <Grid textAlign={"center"} item xs={12} md={6}>
           <Typography>
