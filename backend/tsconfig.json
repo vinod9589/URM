@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016",               // Specifies target JS version
+    "module": "commonjs",             // CommonJS module system
+    "rootDir": "./src",               // The root directory for the source files
+    "outDir": "./dist",               // The directory where compiled files will go
+    "esModuleInterop": true,          // Ensures compatibility with CommonJS modules
+    "forceConsistentCasingInFileNames": true, // Ensures consistent file casing
+    "strict": true,                   // Enables all strict type-checking options
+    "skipLibCheck": true              // Skips type-checking of declaration files
+  },
+  "include": ["src/**/*"],            // Includes all TypeScript files in the 'src' folder
+  "exclude": ["node_modules", "dist"] // Excludes node_modules and dist folders from compilation
+}
