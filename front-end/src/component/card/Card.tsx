@@ -6,7 +6,7 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import { Typography } from "@mui/material";
 import { SvgIconProps } from "@mui/material";
-
+import AddIcon from "@mui/icons-material/Add";
 interface BasicCardProps {
   title: string;
   historyCount: number;
@@ -14,7 +14,7 @@ interface BasicCardProps {
   iconColor: string;
   buttonText: string;
   icon: React.ElementType<SvgIconProps>;
-  background?: string; 
+  background?: string;
 }
 
 const BasicCard: React.FC<BasicCardProps> = ({
@@ -24,11 +24,11 @@ const BasicCard: React.FC<BasicCardProps> = ({
   iconColor,
   buttonText,
   icon: Icon,
-  background, 
+  background,
 }) => {
   return (
     <Box sx={{ position: "relative" }}>
-      <Card  sx={{ borderRadius: "15px" ,marginTop:"30px"}}>
+      <Card sx={{ borderRadius: "15px", marginTop: "30px" }}>
         <CardContent>
           <Box sx={{ textAlign: "end" }}>
             <Typography>{title}</Typography>
@@ -37,7 +37,7 @@ const BasicCard: React.FC<BasicCardProps> = ({
             </Typography>
           </Box>
         </CardContent>
-        <Box 
+        <Box
           sx={{
             backgroundColor: backgroundColor,
             minWidth: "60px",
@@ -46,7 +46,7 @@ const BasicCard: React.FC<BasicCardProps> = ({
             top: -17,
             left: 20,
             borderRadius: "10px",
-            background: background, 
+            background: background,
             opacity: 1,
             justifyContent: "center",
             alignItems: "center",
