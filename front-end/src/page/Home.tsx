@@ -6,6 +6,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import HistoryIcon from "@mui/icons-material/History"; // Example for history
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import Table from "../component/table/Table";
+import EmailIcon from '@mui/icons-material/Email';
 function Home() {
   const cardData = [
     {
@@ -25,12 +26,12 @@ function Home() {
       icon: CheckCircleIcon,
     },
     {
-      title: "Activity",
+      title: "Email",
       historyCount: 300,
       backgroundColor: "lightyellow",
       iconColor: "white",
       buttonText: "Discover",
-      icon: HistoryIcon,
+      icon: EmailIcon,
     },
     {
       title: "History",

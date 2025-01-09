@@ -20,6 +20,7 @@
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@types/react-redux": "^7.1.34",
+    "antd": "^5.23.0",
     "email-validator": "^2.0.4",
     "joi": "^17.13.3",
     "react": "^19.0.0",

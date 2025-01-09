@@ -1,0 +1,37 @@
+::-webkit-scrollbar {
+    width: 2px; 
+  }
+  
+  ::-webkit-scrollbar-horizontal {
+    height: 2px; 
+  }
+  
+  /* Track for both horizontal and vertical scrollbars */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; /* Inner shadow */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Thumb for vertical scrollbar */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234)); /* Gradient thumb */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  /* Thumb for horizontal scrollbar */
+  ::-webkit-scrollbar-thumb-horizontal {
+    background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234)); /* Gradient thumb */
+    border-radius: 10px; /* Rounded corners */
+ 
+  }
+  
+  /* Thumb hover state for vertical scrollbar */
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234)); /* Gradient thumb */
+  }
+  
+  /* Thumb hover state for horizontal scrollbar */
+  ::-webkit-scrollbar-thumb-horizontal:hover {
+    background: linear-gradient(rgb(134, 239, 172), rgb(59, 130, 246), rgb(147, 51, 234)); /* Gradient thumb */
+  }
+  
