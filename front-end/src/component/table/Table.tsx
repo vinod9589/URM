@@ -52,7 +52,7 @@ export default function DataGridDemo() {
     <Box 
       sx={{ 
         height: 420, 
-        width: "100%", 
+        // width: "100%", 
         backgroundColor: "white",
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", 
         borderRadius: "8px", 

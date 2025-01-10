@@ -10,11 +10,10 @@ import Email from "./page/email/Email";
 function App() {
   return (
     <>
-      {/* <Header />
+      <Header />
       <Outlet />
-      <Footer /> */}
+      <Footer />
       <Modal/>
-      {/* <Email/> */}
     </>
   );
 }

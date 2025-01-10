@@ -1,12 +1,13 @@
 import React from "react";
 import Card from "../component/card/Card"; // Ensure correct path to your BasicCard component
-import { Box, Grid, Paper, Typography } from "@mui/material";
+import { Box, Grid, Grid2, Paper, Typography } from "@mui/material";
 import ViewListIcon from "@mui/icons-material/ViewList";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import HistoryIcon from "@mui/icons-material/History"; // Example for history
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import Table from "../component/table/Table";
-import EmailIcon from '@mui/icons-material/Email';
+import EmailIcon from "@mui/icons-material/Email";
+import TaskSidebar from "./taskSidebar/TaskSidebar";
 function Home() {
   const cardData = [
     {
@@ -76,28 +77,23 @@ function Home() {
       </Grid>
       {/* ---------------------user table data------------------------ */}
 
-      <Box sx={{ flexGrow: 1, padding: 3 }}>
-        <Typography variant="h6">
-          {" "}
-          <strong>User List</strong>{" "}
-        </Typography>
-        <Grid marginTop={1} container>
-          <Grid textAlign={"center"} item xs={12} md={8}>
+      <Box  >
+        <Grid2 marginTop={1} container spacing={2} >
+          <Grid2 size={{md:7,xs:12}}>
+          <Table />
+          </Grid2>
+          <Grid2   size={{md:3,xs:12}}>
+          <TaskSidebar />
+          </Grid2>
+        </Grid2>
+        {/* <Grid  container gap={2} >
+          <Grid textAlign={"center"} item xs={12} lg={7}>
             <Table />
           </Grid>
-          <Grid
-            sx={{
-            
-            }}
-            item
-            xs={12}
-            md={4}
-           
-          
-          >
-            Email show
+          <Grid sx={{ backgroundColor: "white " }} item xs={12} lg={3}>
+            <TaskSidebar />
           </Grid>
-        </Grid>
+        </Grid> */}
       </Box>
     </>
   );
