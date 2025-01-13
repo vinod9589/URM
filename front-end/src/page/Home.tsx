@@ -95,6 +95,44 @@ function Home() {
           </Grid>
         </Grid> */}
       </Box>
+      <Box sx={{ padding: 2, backgroundColor: "#f9f9f9" }}>
+      <Grid
+        container 
+        spacing={2} 
+        justifyContent="center" 
+        alignItems="flex-start" // Center items at the top of the container
+        marginTop={2}
+      >
+        {/* Left Section (Table) */}
+        <Grid
+          xs={12} 
+          md={8} 
+          sx={{ display: "flex", justifyContent: "center" }}
+        >
+          <Box sx={{ width: "90%", maxWidth: "1000px" }}>
+            <Table />
+          </Box>
+        </Grid>
+
+        {/* Right Section (TaskSidebar) */}
+        <Grid
+          xs={12} 
+          md={4} 
+          sx={{ display: "flex", justifyContent: "center" }}
+        >
+          <Box sx={{ width: "90%", maxWidth: "350px" }}>
+            <TaskSidebar />
+          </Box>
+        </Grid>
+      </Grid>
+    </Box>
+
+
+
+
+
+
+    
     </>
   );
 }

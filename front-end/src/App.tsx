@@ -6,7 +6,7 @@ import Modal from "./component/modal/Modal"
 import UserTodoFrom from "./page/userTodoForm/UserTodoForm";
 import UserDataForm from "./page/userDataForm/UserDataForm";
 import Email from "./page/email/Email";
-
+import Testing from "./page/Testing"
 function App() {
   return (
     <>
@@ -14,6 +14,7 @@ function App() {
       <Outlet />
       <Footer />
       <Modal/>
+      <Testing/>
     </>
   );
 }
