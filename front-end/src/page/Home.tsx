@@ -8,6 +8,8 @@ import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import Table from "../component/table/Table";
 import EmailIcon from "@mui/icons-material/Email";
 import TaskSidebar from "./taskSidebar/TaskSidebar";
+import Testing from "./Testing"
+import { Flex } from "antd";
 function Home() {
   const cardData = [
     {
@@ -77,15 +79,21 @@ function Home() {
       </Grid>
       {/* ---------------------user table data------------------------ */}
 
-      <Box  >
-        <Grid2 marginTop={1} container spacing={2} >
-          <Grid2 size={{md:7,xs:12}}>
-          <Table />
-          </Grid2>
-          <Grid2   size={{md:3,xs:12}}>
-          <TaskSidebar />
-          </Grid2>
-        </Grid2>
+      <Box sx={{display:"flex",alignItems:"center",justifyContent:"center"}}    >
+      
+      <Grid sx={{width:"90%"}} container spacing={4} justifyContent="center" alignItems="center" marginTop={1}>
+  <Grid sx={{border:"1px solid black"}} item xs={12} md={8}>
+    {/* <Table /> */}
+    <Testing />
+  </Grid>
+  <Grid item xs={12} md={4} sx={{display:"flex",justifyContent:"center",alignItems:"center"}}  >
+    <TaskSidebar />
+  </Grid>
+</Grid>
+
+
+
+
         {/* <Grid  container gap={2} >
           <Grid textAlign={"center"} item xs={12} lg={7}>
             <Table />

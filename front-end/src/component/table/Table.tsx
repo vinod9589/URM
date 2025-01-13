@@ -2,7 +2,7 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import { TextField, Typography } from "@mui/material";
-import "./style.css"
+
 const columns: GridColDef<(typeof rows)[number]>[] = [
   { field: "id", headerName: "ID", width: 90 },
   {
@@ -97,3 +97,6 @@ export default function DataGridDemo() {
     </Box>
   );
 }
+
+
+

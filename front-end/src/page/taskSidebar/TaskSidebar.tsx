@@ -1,18 +1,39 @@
 import React from "react";
-import { Box, Typography, List, ListItem, ListItemAvatar, ListItemText, Avatar } from "@mui/material";
+import {
+  Box,
+  Typography,
+  List,
+  ListItem,
+  ListItemAvatar,
+  ListItemText,
+  Avatar,
+} from "@mui/material";
 import { Dropdown, Menu, MenuButton, MenuItem } from "@mui/joy";
-import FilterListIcon from '@mui/icons-material/FilterList';
+import FilterListIcon from "@mui/icons-material/FilterList";
 
 function TaskSidebar() {
   const tasks = [
     { id: 1, title: "$2400, Design changes", date: "22 DEC 7:20 PM" },
     { id: 2, title: "New order #1832412", date: "21 DEC 11:00 PM" },
     { id: 3, title: "Server payments for April", date: "21 DEC 9:34 PM" },
-    { id: 4, title: "New card added for order #4395133", date: "20 DEC 2:20 AM" },
+    {
+      id: 4,
+      title: "New card added for order #4395133",
+      date: "20 DEC 2:20 AM",
+    },
   ];
 
   return (
-    <Box sx={{ backgroundColor: "white", padding: 2, boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", borderRadius: "8px" }}>
+    <Box
+      sx={{
+        backgroundColor: "white",
+        padding: 2,
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
+        borderRadius: "8px",
+        height:500,
+        width:"100%"
+      }}
+    >
       <Box
         sx={{
           marginBottom: "16px",
@@ -59,8 +80,22 @@ function TaskSidebar() {
                 <Avatar sx={{ bgcolor: "red", width: 40, height: 40 }} />
               </ListItemAvatar>
               <ListItemText
-                primary={<Typography sx={{ fontWeight: "bold", textAlign: "center" }}>{task.title}</Typography>}
-                secondary={<Typography sx={{ fontSize: "13px", color: "gray", textAlign: "center" }}>{task.date}</Typography>}
+                primary={
+                  <Typography sx={{ fontWeight: "bold", textAlign: "center" }}>
+                    {task.title}
+                  </Typography>
+                }
+                secondary={
+                  <Typography
+                    sx={{
+                      fontSize: "13px",
+                      color: "gray",
+                      textAlign: "center",
+                    }}
+                  >
+                    {task.date}
+                  </Typography>
+                }
               />
             </Box>
           </ListItem>

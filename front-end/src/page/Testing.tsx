@@ -5,25 +5,25 @@ import Typography from "@mui/material/Typography";
 import LinearProgress from "@mui/material/LinearProgress";
 
 const columns: GridColDef[] = [
-  { field: "companies", headerName: "COMPANIES", width: 250 },
-  { field: "members", headerName: "MEMBERS", width: 150 },
-  { field: "budget", headerName: "BUDGET", width: 150, align: "center", headerAlign: "center" },
-  { field: "completion", headerName: "COMPLETION", width: 200, align: "center", headerAlign: "center", renderCell: renderCompletion },
+  { field: "fristname", headerName: "FRIST NAME", width: 180 },
+  { field: "lastname", headerName: "LAST NAME", width: 180 },
+  { field: "email", headerName: "EMAIL", width: 150, align: "center", headerAlign: "center" },
+  { field: "mobilenumber", headerName: "MOBILE NUMBER", width: 200, align: "center", headerAlign: "center", renderCell: renderCompletion },
 ];
 
 const rows = [
-  { id: 1, companies: "Material UI XD Version", members: "3 Members", budget: "$14,000", completion: 70 },
-  { id: 2, companies: "Add Progress Track", members: "1 Member", budget: "$3,000", completion: 40 },
-  { id: 3, companies: "Fix Platform Errors", members: "2 Members", budget: "Not set", completion: 100 },
-  { id: 4, companies: "Launch our Mobile App", members: "3 Members", budget: "$20,500", completion: 100 },
-  { id: 5, companies: "Add the New Pricing Page", members: "1 Member", budget: "$500", completion: 30 },
-  { id: 6, companies: "Redesign New Online Shop", members: "2 Members", budget: "$2,000", completion: 50 },
+  { id: 1, fristname: "fvf", lastname: "3 Members", email: "$14,000", mobilenumber: "hu"},
+  { id: 2, fristname: "Add Progress Track", lastname: "1 Member", email: "$3,000", mobilenumber: 40 },
+  { id: 3, fristname: "Fix Platform Errors", lastname: "2 Members", email: "Not set", mobilenumber: 100 },
+  { id: 4, fristname: "Launch our Mobile App", lastname: "3 Members", email: "$20,500", mobilenumber: 100 },
+  { id: 5, fristname: "Add the New Pricing Page", lastname: "1 Member", email: "$500", mobilenumber: 30 },
+  { id: 6, fristname: "Redesign New Online Shop", lastname: "2 Members", email: "$2,000", mobilenumber: "ssss" },
 ];
 
 function renderCompletion(params: any) {
   return (
     <Box width="100%" position="relative">
-      <LinearProgress variant="determinate" value={params.value} />
+
       <Typography
         variant="caption"
         sx={{
@@ -34,7 +34,7 @@ function renderCompletion(params: any) {
           color: "white",
         }}
       >
-        {params.value}%
+        
       </Typography>
     </Box>
   );
@@ -43,14 +43,14 @@ function renderCompletion(params: any) {
 export default function ProjectTable() {
   const [paginationModel, setPaginationModel] = React.useState({
     page: 0,
-    pageSize: 6, // Default page size
+    pageSize: 6, 
   });
 
   return (
     <Box
       sx={{
         height: 500,
-        width: "50%",
+        Width: "50%",
         backgroundColor: "white",
         boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)",
         borderRadius: "8px",
@@ -69,7 +69,7 @@ export default function ProjectTable() {
         autoHeight
         sx={{
           "& .MuiDataGrid-footerContainer": {
-            marginTop: "16px", // Adds space at the bottom for footer
+            marginTop: "16px", 
           },
         }}
       />
